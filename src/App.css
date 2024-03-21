@@ -1,0 +1,182 @@
+*:focus {
+  outline: unset;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: skyblue;
+  min-height: 100vh;
+}
+
+.app-container>div {
+  max-width: 55%;
+  max-height: 90vh;
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.app-container input {
+  border: 1px solid #dcdcdc;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.app-container select {
+  border: 1px solid #dcdcdc;
+  background-color: white;
+  color: gray;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 1;
+  width: 100%;
+}
+
+.app-container .form-div button {
+  border: 1px solid skyblue;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: skyblue;
+  width: 100%;
+  color: white;
+  font-weight: 700;
+}
+
+.app-container button:hover {
+  border: 1px solid skyblue;
+  background-color: white;
+  color: skyblue;
+  cursor: pointer;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-div>div {
+  display: flex;
+  gap: 12px;
+}
+
+.table-div {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.table-div thead {
+  background-color: #87ceeb;
+  text-align: center;
+}
+
+.table-div thead th {
+  text-align: center;
+  cursor: pointer;
+}
+
+.table-div tbody td {
+  text-align: center;
+}
+
+.table-div td,
+.table-div th {
+  border: 1px solid #87ceeb30;
+  padding: 10px;
+}
+
+.table-div thead svg{
+  width: 8px;
+  fill: white;
+  margin-left: 5px;
+}
+
+.table-div tr:nth-child(even) {
+  background-color: #87ceeb10;
+}
+
+.table-div tr:hover {
+  background-color: #87ceeb30;
+}
+
+.table-div th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: skyblue;
+  color: white;
+}
+
+.pagination-div{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.pagination-div button{
+  width: 40px;
+  border: 1px solid skyblue;
+  border-radius: 30px;
+  background-color: skyblue;
+  color: white;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.pagination-div button.active{
+  border: 1px solid skyblue;
+  background-color: white;
+  color: skyblue;
+}
+
+@media (min-width: 1199px) {
+  .app-container>div {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  .app-container>div {
+    max-width: 70%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container>div {
+    max-width: 90%;
+    padding: 12px;
+  }
+
+  .app-container h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+.table-div {
+  min-width: 580px;
+}
+}
+
+@media (max-width: 450px) {
+  .app-container>div {
+    max-width: 90%;
+  }
+}
